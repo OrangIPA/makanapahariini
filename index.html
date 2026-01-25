@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>makanapahariini</title>
+  </head>
+  <body>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: oklch(0.205 0 0);
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: stretch;
+      "
+    >
+      <div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+          "
+        >
+          <div>Makan Apa Hari Ini?</div>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 1rem 4rem;
+          gap: 1rem;
+        "
+      >
+        <div
+          style="
+            background-color: oklch(0.269 0 0);
+            padding: 2rem;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.9rem;
+            width: 100%;
+            max-width: 50rem;
+            border: 1px solid oklch(0.371 0 0);
+          "
+        >
+          <div style="font-size: 0.8rem; color: oklch(0.556 0 0)">
+            BREAKFAST
+          </div>
+          <div style="font-size: 1.5rem" id="sarapan-display">Nasi Padang</div>
+        </div>
+        <div
+          style="
+            background-color: oklch(0.269 0 0);
+            padding: 2rem;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.9rem;
+            width: 100%;
+            max-width: 50rem;
+            border: 1px solid oklch(0.371 0 0);
+          "
+        >
+          <div style="font-size: 0.8rem; color: oklch(0.556 0 0)">
+            LUNCH
+          </div>
+          <div style="font-size: 1.5rem" id="makansiang-display">Nasi Padang</div>
+        </div>
+        <div
+          style="
+            background-color: oklch(0.269 0 0);
+            padding: 2rem;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.9rem;
+            width: 100%;
+            max-width: 50rem;
+            border: 1px solid oklch(0.371 0 0);
+          "
+        >
+          <div style="font-size: 0.8rem; color: oklch(0.556 0 0)">
+            DINNER
+          </div>
+          <div style="font-size: 1.5rem" id="makanmalan-display">Nasi Padang</div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
