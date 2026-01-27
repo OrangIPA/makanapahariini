@@ -31,11 +31,11 @@ const WARUNG_LIST = [
 const seed =
   BigInt(
     parseInt(`${today.getFullYear()}${today.getMonth() + 1}${today.getDate() + 3}`),
-  ) - 2025000n;
+  ) + 2n;
 
 
-const g = BigInt(31n);
-const n = BigInt(226553n);
+const g = BigInt(65537n);
+const n = BigInt(187780411909n);
 
 function modExp(base: bigint, exponent: bigint, modulus: bigint): BigInt {
   if (modulus <= 0n) {
@@ -63,7 +63,7 @@ function modExp(base: bigint, exponent: bigint, modulus: bigint): BigInt {
 }
 
 displays.forEach((v, i) => {
-  const pseudorandom = modExp(g, seed + BigInt(i), n);
+  const pseudorandom = modExp(g, seed * BigInt(i), n);
   const warungIndex = Math.floor(Number(pseudorandom) / Number(n) * (WARUNG_LIST.length));
   v.innerText = WARUNG_LIST[warungIndex];
 });
