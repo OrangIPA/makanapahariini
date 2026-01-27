@@ -21,11 +21,15 @@ const WARUNG_LIST = [
   "Padang: Sabana",
   "Padang: POM",
   "CY The Second",
+  "CY The First",
   "Mbak Eny",
   "Pakem",
   "Hara",
   "Wonder Kids",
   "Ngemie",
+  "Nayya",
+  "Pecel",
+  "Motekar"
 ];
 
 const seed =
