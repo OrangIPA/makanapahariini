@@ -67,7 +67,7 @@ function modExp(base: bigint, exponent: bigint, modulus: bigint): BigInt {
 }
 
 displays.forEach((v, i) => {
-  const pseudorandom = modExp(g, seed * BigInt(i), n);
+  const pseudorandom = modExp(g, seed * BigInt(i + 34), n);
   const warungIndex = Math.floor(Number(pseudorandom) / Number(n) * (WARUNG_LIST.length));
   v.innerText = WARUNG_LIST[warungIndex];
 });
